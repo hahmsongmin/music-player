@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DemoPlayer</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="src/main.js" defer></script>
     <script
       src="https://kit.fontawesome.com/bec50d0596.js"
       crossorigin="anonymous"
@@ -25,17 +26,35 @@
         <div class="music-icon"><i class="fas fa-music"></i></div>
       </section>
       <section class="music-play">
-        <div class="play-time"><span>0:00</span><span>3:24</span></div>
-        <input type="range" class="play-time-range" value="0" />
+        <div class="play-time">
+          <div class="play-time-range"></div>
+        </div>
       </section>
       <section class="music-btns">
         <i class="fas fa-exchange-alt"></i>
-        <i class="fas fa-step-backward"></i>
-        <div id="music-btns-play"><i class="fas fa-play"></i></div>
-        <i class="fas fa-step-forward"></i>
-        <i id="play-ways__random" class="fas fa-random"></i>
+        <button class="music-btns-back">
+          <i class="fas fa-step-backward"></i>
+        </button>
+        <button id="music-btns-play"><i class="fas fa-play"></i></button>
+        <button class="music-btns-Forward">
+          <i class="fas fa-step-forward"></i>
+        </button>
+        <i class="fas fa-random"></i>
       </section>
       <section class="music-effect"></section>
     </section>
+
+    <div class="now-playing">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+      <span class="bar bar3"></span>
+      <span class="bar bar4"></span>
+      <span class="bar bar5"></span>
+      <span class="bar bar6"></span>
+      <span class="bar bar7"></span>
+      <span class="bar bar8"></span>
+      <span class="bar bar9"></span>
+      <span class="bar bar10"></span>
+    </div>
   </body>
 </html>
